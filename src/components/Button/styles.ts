@@ -14,8 +14,7 @@ export const styles = StyleSheet.create({
   },
   buttonText: {
     fontSize: ScaleWidth(16),
-    fontWeight: "700",
     color: Colors.white,
-    fontFamily: Fonts.medium,
+    fontWeight: "600",
   },
 });

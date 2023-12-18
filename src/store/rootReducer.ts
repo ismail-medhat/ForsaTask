@@ -1,9 +1,9 @@
 // rootReducer.ts
 
 import { combineReducers } from "@reduxjs/toolkit";
-import contactSlice from "./slices/contactSlice";
+import storesSlice from "./slices/storesSlice";
 const rootReducer = combineReducers({
-  contact: contactSlice,
+  stores: storesSlice,
   // Add more slices here if you have multiple slices in your app
 });
 

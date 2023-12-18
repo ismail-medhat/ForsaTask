@@ -1,6 +1,5 @@
 const Images = {
-  contactImg: require("../assets/images/contactImg.png"),
-  defaultContactImg: require("../assets/images/defaultContactImg.png"),
+  profileImg: require("../assets/images/profileImg.png"),
 };
 
 export default Images;

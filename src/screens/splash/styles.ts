@@ -11,7 +11,7 @@ const styles = StyleSheet.create({
   appNameTxt: {
     color: Colors.white,
     fontSize: 30,
-    fontFamily: Fonts.semi_bold,
+    fontWeight: "800",
     letterSpacing: 2,
     marginTop: ScaleHeight(10),
   },

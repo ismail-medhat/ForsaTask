@@ -13,7 +13,7 @@ export const styles = StyleSheet.create({
   titleTxt: {
     fontSize: ScaleWidth(18),
     color: Colors.white,
-    fontFamily: Fonts.medium,
+    fontWeight: "600",
   },
   rowStart: {
     alignItems: "center",
@@ -26,14 +26,14 @@ export const styles = StyleSheet.create({
     flexDirection: "row",
   },
   cardtxt: {
-    fontFamily: Fonts.medium,
+    fontWeight: "600",
     fontSize: ScaleWidth(14),
     color: Colors.yellow,
     marginStart: ScaleWidth(7),
     marginBottom: ScaleHeight(3),
   },
   cardSubtxt: {
-    fontFamily: Fonts.regular,
+    fontWeight: "500",
     fontSize: ScaleWidth(12),
     color: Colors.yellow,
     marginStart: ScaleWidth(7),

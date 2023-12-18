@@ -19,12 +19,12 @@ export const styles = StyleSheet.create({
   titleTxt: {
     fontSize: ScaleWidth(16),
     color: Colors.primary,
-    fontFamily: Fonts.bold,
+    fontWeight: "800",
   },
   subTitleTxt: {
     fontSize: ScaleWidth(14),
     color: Colors.primary,
-    fontFamily: Fonts.medium,
+    fontWeight: "600",
     paddingRight: ScaleWidth(3),
   },
 });

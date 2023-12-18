@@ -5,7 +5,7 @@ import { Platform } from "react-native";
 import { request, RESULTS, PERMISSIONS } from "react-native-permissions";
 import { useDispatch, useSelector } from "react-redux";
 import { RootState } from "store";
-import { setContactGranted, setDeviceContact } from "store/slices/contactSlice";
+import { setContactGranted, setDeviceContact } from "store/slices/storesSlice";
 import Contacts from "react-native-contacts";
 
 const useFetchContacts = () => {

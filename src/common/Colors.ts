@@ -16,7 +16,7 @@ const Colors = {
   lightBlue: "#00BEDE",
   lightBlueCard: "#EDF8FC",
   skyBlue: "#CFF8FF",
-  red: "#EB4335",
+  red: "#eb1c23",
   lightGreen: "#dcf0d7",
   lightGreen2: "#F0F9EE",
   yellowCard: "#FDFDE9",

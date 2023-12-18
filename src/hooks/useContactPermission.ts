@@ -4,7 +4,7 @@ import React, { useState, useEffect, useRef } from "react";
 import { Platform, AppState } from "react-native";
 import { request, RESULTS, PERMISSIONS } from "react-native-permissions";
 import { useDispatch } from "react-redux";
-import { setContactGranted } from "store/slices/contactSlice";
+import { setContactGranted } from "store/slices/storesSlice";
 
 const useContactPermission = () => {
   const dispatch = useDispatch();

@@ -6,8 +6,8 @@ export type apisTypes = {
 };
 
 export const APIS: apisTypes = {
-  storeSectors: "api/v1/stores/mysectors",
+  storeSectors: "api/v1/stores/mysectors/",
   storeSectorBrands: "api/v1/stores/mystores/",
-  storeOffers: "api/v1/stores/myoffers",
-  additionalLoans: "api/v1/onetransaction/myservicetypes",
+  storeOffers: "api/v1/stores/myoffers/",
+  additionalLoans: "api/v1/onetransaction/myservicetypes/",
 };

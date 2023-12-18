@@ -5,11 +5,12 @@ import { Header, ScreenContainer } from "components";
 import { useTranslation } from "react-i18next";
 import { Colors, Images, ScaleWidth } from "common";
 import Icon from "react-native-vector-icons/AntDesign";
+import * as Sharing from "expo-sharing";
 
 const ProfileScreen: React.FC = () => {
   const { t } = useTranslation();
 
-  const onSharePress = () => {};
+  const onSharePress = async () => {};
 
   return (
     <ScreenContainer style={styles.container}>
@@ -17,7 +18,7 @@ const ProfileScreen: React.FC = () => {
         <Header title={t("Profile")} />
         <View style={{ padding: ScaleWidth(20) }}>
           <View style={[styles.rowStart, { marginBottom: 15 }]}>
-            <Image source={Images.contactImg} style={styles.prifileImg} />
+            <Image source={Images.profileImg} style={styles.prifileImg} />
             <Text style={styles.userNameTxt}>{"Mohamed Adel"}</Text>
           </View>
           <TouchableOpacity onPress={onSharePress} activeOpacity={0.8}>

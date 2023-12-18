@@ -25,7 +25,7 @@ const styles = StyleSheet.create({
   },
   userNameTxt: {
     fontSize: ScaleWidth(18),
-    fontFamily: Fonts.medium,
+    fontWeight: "600",
     color: Colors.primary,
   },
 });

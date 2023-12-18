@@ -1,19 +1,11 @@
 import axios, { Method, AxiosHeaders } from "axios";
-import { store } from "../store";
 import { APIS, apisTypes } from "./apiUrl";
-import { useTranslation } from "react-i18next";
-
-const { i18n } = useTranslation();
-const appLang = i18n.language;
 
 const BASE_URL = "https://forsa-staging.bit68.com/";
 
 const axiosInstance = axios.create({
   baseURL: BASE_URL,
   timeout: 15000,
-  headers: {
-    "Accept-Language": appLang,
-  },
 });
 
 axiosInstance.interceptors.response.use(
@@ -22,18 +14,7 @@ axiosInstance.interceptors.response.use(
   },
   async (error) => {
     // Code here...
-    const errData = error?.response?.data;
-    const errors = errData?.errors?.join(", ");
-    const err =
-      errData?.error ||
-      errors ||
-      errData?.message ||
-      "Something went wrong, please try again later";
-    console.log("interceptor error ==>> ", err);
-    if (error?.toString()?.includes("Network Error")) {
-      console.log("network_error");
-    }
-
+    console.log("error :: " + error);
     return Promise.reject(error);
   }
 );
@@ -45,7 +26,7 @@ const Axios = async ({
   params,
   pathParams = "",
   header,
-  isFormDate = true,
+  isFormDate = false,
 }: {
   method: Method;
   path: keyof apisTypes;
@@ -55,8 +36,7 @@ const Axios = async ({
   header?: AxiosHeaders;
   isFormDate?: boolean;
 }) => {
-  const accessToken = store.getState().auth?.userData?.data?.token;
-  console.log("TOKEN : ", accessToken);
+  const accessToken = "";
 
   const authHeder = accessToken
     ? {
