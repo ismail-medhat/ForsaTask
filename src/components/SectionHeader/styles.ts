@@ -5,7 +5,7 @@ export const styles = StyleSheet.create({
   sectionHeaderBox: {
     width: ScaleWidth("100%"),
     backgroundColor: "transparent",
-    paddingVertical: ScaleHeight(20),
+    paddingVertical: ScaleHeight(12),
     paddingHorizontal: ScaleWidth(20),
     alignItems: "center",
     justifyContent: "space-between",

@@ -44,6 +44,6 @@ export const styles = StyleSheet.create({
     borderRadius: ScaleWidth(10),
     paddingVertical: ScaleWidth(5),
     paddingHorizontal: ScaleWidth(10),
-    marginVertical: ScaleHeight(20),
+    marginTop: ScaleHeight(20),
   },
 });
